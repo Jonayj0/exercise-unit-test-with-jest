@@ -31,11 +31,11 @@ test("One Dollar should be 146.26168224299064 yens", function() {
     // Uso la función como debe ser usada
     const yen = fromDollarToYen(1);
 
-    // // Si 1 Dollar son  dólares, entonces 3.5 euros debe ser (3.5 * 1.07)
+    // // Si 1 Dollar son 146.26168224299064 yenes, entonces 1 dollar deberían ser = (1 * 146.261682505)
     // const expected = 1 * 1.07;
 
     // Hago mi comparación (la prueba)
-    expect(yen).toBe(146.26168224299064); // 1 dollar son 146.261682505 yenes, entonces 3.5 euros deberían ser = (3.5 * 1.07)
+    expect(yen).toBe(146.26168224299064); // 1 dollar son 146.261682505 yenes, entonces 1 dollar deberían ser = (1 * 146.261682505)
 })
 
 test("One yen should be 0.0055591054313099035 Pounds", function() {
@@ -45,9 +45,9 @@ test("One yen should be 0.0055591054313099035 Pounds", function() {
     // Uso la función como debe ser usada
     const pounds = fromYenToPound(150);
 
-    // // Si 1 yen son 0.0055591054313099035 pounds, entonces 150 YENES debe ser (150 * 0.8338658146964857)
+    // // Si 1 yen son 0.0055591054313099035 pounds, entonces 150 YENES debe ser (150 * 0.0055591054313099035)
     // const expected = 1 * 1.07;
 
     // Hago mi comparación (la prueba)
-    expect(pounds).toBe(0.8338658146964857); // 1 yen son 0.8338658146964857 pounds, entonces 3.5 euros deberían ser = (3.5 * 1.07)
+    expect(pounds).toBe(0.8338658146964857); // 1 yen son 0.005559105431309903 pounds, entonces 150 yenes deberían ser = (150 * 0.005559105431309903)
 })

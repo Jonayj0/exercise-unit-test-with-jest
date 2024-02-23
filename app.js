@@ -31,27 +31,30 @@ console.log(fromEuroToDollar(3.5));
 const fromDollarToYen = function(valueInDollar) {
     // Convertimos el valor a dólares
     let valueInYen = (valueInDollar/oneEuroIs["USD"]) * oneEuroIs["JPY"];
-    // Retornamos el valor en dólares
+    // ESTE CALCULO DE LA REGLA DE 3 TAMBIEN ES VALIDO ///
+    //     let valueInYen = (valueInDollar*oneEuroIs["JPY"]) / oneEuroIs["USD"];
+
+    // Retornamos el valor en yenes
     return valueInYen;
     
 }
 console.log(fromDollarToYen(1));
 
-// ESTE CALCULO TAMBIEN ES VALIDO ///
+// ESTE CALCULO TAMBIEN ES VALIDO para los 3///
 // const fromDollarToYen = function(valueInDollar) {
 //     // Convertimos el valor a dólares
 //     let valueInYen = (valueInDollar*oneEuroIs["JPY"]) / oneEuroIs["USD"];
 //     // Retornamos el valor en dólares
 //     return valueInYen;
     
-// }
+// 
 // console.log(fromDollarToYen(1));
 
 // CALCULO DEL YEN CONTRA EL POUND ///
 const fromYenToPound = function(valueInYen) {
     // Convertimos el valor a dólares
     let valueInPound = (valueInYen/oneEuroIs["JPY"]) * oneEuroIs["GBP"];
-    // Retornamos el valor en dólares
+    // Retornamos el valor en pounds
     return valueInPound;
 }
 console.log(fromYenToPound(150));
